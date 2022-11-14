@@ -1,0 +1,72 @@
+/* .p-teste {
+    width: 40%;
+    text-justify: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+.h1-principal {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2em;
+    color: aliceblue;
+    padding-bottom: .25em;
+    margin-top: .2em;
+}
+
+/* h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+.header-principal {
+    background-color: brown;
+    box-shadow: 2px 2px 15px black;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.img-fundo {
+    width: 100%;
+    position: absolute;
+}
+
+.div-links {
+    display: flex;
+    padding: 1em;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.h3-link {
+    margin-right: 1em;
+}
+
+.h3-link:first-child {
+    margin-left: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    opacity: .7;
+    transform: scale(1.2);
+}
+
+.h1-content {
+    position: absolute;
+    display: flex;
+    text-align: center;
+}
+
+.div-content {
+    position: relative;
+}
