@@ -1,28 +1,39 @@
-/* .p-teste {
-    width: 40%;
-    text-justify: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 
-.h1-principal {
-    text-align: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 2em;
-    color: aliceblue;
-    padding-bottom: .25em;
-    margin-top: .2em;
+@font-face {
+    font-family: 'Spider Man';
+    src: url('./fonts/The Amazing Spider-Man.ttf') format('truetype');
 }
 
-/* h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
+.h1-principal {
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-left: 2em; */
+    color: aliceblue;
+    padding-bottom: .25em;
+    margin: auto;
+}
+
+.logo {
+    width: 15%;
+    margin-right: 1em;
+    margin-left: 2em;
+}
+
+.div-h1-principal-logo {
+    display: flex;
+    justify-content: space-around;
+}
 
 .header-principal {
-    background-color: brown;
+    background-color: rgb(181, 1, 1);
     box-shadow: 2px 2px 15px black;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 5em;
+    z-index: 999;
 }
 
 * {
@@ -33,18 +44,14 @@
 
 .img-fundo {
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .div-links {
     display: flex;
-    padding: 1em;
+    margin-top: 1.6em;
     color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.h3-link {
-    margin-right: 1em;
 }
 
 .h3-link:first-child {
@@ -57,16 +64,30 @@ a {
 }
 
 a:hover {
-    opacity: .7;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: .25s ease-out;
+    color: #daa520
 }
 
 .h1-content {
     position: absolute;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    font-family: 'Spider Man';
+    font-size: 5em;
+    top: 20%;
+    left: 1em;
+    /* background-color: #daa520; */
+    width: 7em;
+    color: #daa520;
+    text-shadow: 2px 2px 2px black;
 }
 
 .div-content {
     position: relative;
+}
+
+.div-h1-content {
+    display: flex;
+    justify-content: center;
 }
